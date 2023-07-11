@@ -17,10 +17,12 @@
       And  def iduser = response[0].id
       And print iduser
 
+      @getespecific
     Scenario: Get specific users
       * call read("../get/getuser.feature@getid")
       Given url 'https://gorest.co.in/public/v2/users/?id=' + iduser
       And print iduser
+        And def id = iduser
       When method get
       And header Authorization = 'Bearer' + TokenId
       Then status 200
