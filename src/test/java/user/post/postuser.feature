@@ -7,8 +7,8 @@ Feature: create users
         * def payload =
         """
     {
-    "name":"manuel3233",
-    "email":"manuel4534334654@gmail.com",
+    "name":"manuel32333",
+    "email":"manuel45334334654@gmail.com",
     "gender":"male",
     "status":"Active",
 
@@ -27,3 +27,12 @@ Feature: create users
         And print id
 
 
+  Scenario: create user already exist
+    Given url 'https://gorest.co.in/public/v2/users'
+    And request payload
+    And header Authorization = 'Bearer ' + TokenId
+    When method Post
+    Then status 422
+    And print response
+    And def id = response.id
+    And print id
