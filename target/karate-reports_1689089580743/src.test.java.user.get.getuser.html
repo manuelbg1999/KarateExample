@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.user.get.getuser</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-07-11 10:32:16 a. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>Get all users</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/user/get/getuser.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">get users using the method get method</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">Get all users</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1656</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Tokenid = &#39;7d15030cb55b5df9de9e9bbdcde859c8ffb951f4927d766303d98021d5d2427b&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">66</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v2/users/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1567</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">10:32:15.264 request:
+1 &gt; GET https://gorest.co.in/public/v2/users/
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:32:16.530 response time in milliseconds: 1266
+1 &lt; 200
+1 &lt; Date: Tue, 11 Jul 2023 15:32:16 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; etag: W/&quot;5bdc79338502fb3d715f10d552341016&quot;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 &lt; x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 &lt; x-links-previous: 
+1 &lt; x-pagination-limit: 10
+1 &lt; x-pagination-page: 1
+1 &lt; x-pagination-pages: 293
+1 &lt; x-pagination-total: 2922
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: 4a4ea194-1218-4dbb-9f1b-5b558841bb24
+1 &lt; x-runtime: 0.026668
+1 &lt; x-xss-protection: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=O8RRuq8pNY1mp0EGuMwh68eMKLjPJMTsuTnzGWPNVT%2BieGnGtlimoE8J2NQZbe6MtYERZoeTC8dCgPR4bfwkmtnSUiOTQ5ptJHjfLsIz3WTLYgYQZSgz5kL7nJka744%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7e52191e0ac14c2b-MIA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:3582370,&quot;name&quot;:&quot;Sarala Pandey&quot;,&quot;email&quot;:&quot;pandey_sarala@stamm-thompson.example&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3582368,&quot;name&quot;:&quot;Anunay Rana&quot;,&quot;email&quot;:&quot;rana_anunay@wyman-schamberger.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3582367,&quot;name&quot;:&quot;Bhaanumati Deshpande&quot;,&quot;email&quot;:&quot;bhaanumati_deshpande@renner-vonrueden.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3582366,&quot;name&quot;:&quot;Jyotis Dubashi&quot;,&quot;email&quot;:&quot;jyotis_dubashi@rau.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3582365,&quot;name&quot;:&quot;Kailash Mukhopadhyay&quot;,&quot;email&quot;:&quot;kailash_mukhopadhyay@abernathy-little.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3582364,&quot;name&quot;:&quot;Shrishti Sharma II&quot;,&quot;email&quot;:&quot;sharma_ii_shrishti@raynor.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3582363,&quot;name&quot;:&quot;Deepali Patil&quot;,&quot;email&quot;:&quot;deepali_patil@white.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3582362,&quot;name&quot;:&quot;Shresthi Khatri&quot;,&quot;email&quot;:&quot;khatri_shresthi@ankunding-yundt.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3582361,&quot;name&quot;:&quot;Vidhur Shah CPA&quot;,&quot;email&quot;:&quot;vidhur_cpa_shah@goodwin.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3582360,&quot;name&quot;:&quot;Prema Embranthiri&quot;,&quot;email&quot;:&quot;prema_embranthiri@kuvalis.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + TokenId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">10:32:16.568 src/test/java/user/get/getuser.feature:14
+And header Authorization = &#39;Bearer &#39; + TokenId
+js failed:
+&gt;&gt;&gt;&gt;
+01: &#39;Bearer &#39; + TokenId
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;TokenId&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/user/get/getuser.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.user.get.getuser</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-07-11 12:13:20 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:14]"><span>[1:14]</span> <span>Get all users</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/user/get/getuser.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">get users using the method get method</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getid</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:14]</span>
+                <span class="scenario-name">Get all users</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2465</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def TokenId = &#39;7d15030cb55b5df9de9e9bbdcde859c8ffb951f4927d766303d98021d5d2427b&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">133</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v2/users/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2174</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">12:13:18.311 request:
+1 &gt; GET https://gorest.co.in/public/v2/users/
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:13:19.972 response time in milliseconds: 1661
+1 &lt; 200
+1 &lt; Date: Tue, 11 Jul 2023 17:13:19 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; etag: W/&quot;2416d332531c751538de7851bae9317b&quot;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 &lt; x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 &lt; x-links-previous: 
+1 &lt; x-pagination-limit: 10
+1 &lt; x-pagination-page: 1
+1 &lt; x-pagination-pages: 292
+1 &lt; x-pagination-total: 2918
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: 8adb5e89-1e7a-4552-b1f7-5005dd120ab8
+1 &lt; x-runtime: 0.024595
+1 &lt; x-xss-protection: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=NDmE5AUfCxZk8HEPDYi8Bq%2Fx7i0GpfGXNL1Nrfj9rmPXmT4nKV1t4hRW5q5zKJpgfkasVsQqH%2BWkv4h4%2Bf1oaGqWIn83DiVOf0EB9Nz%2B%2F96byuGUfEUZXUy5FcvFvsc%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7e52ad262a42db21-MIA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:3582365,&quot;name&quot;:&quot;Kailash Mukhopadhyay&quot;,&quot;email&quot;:&quot;kailash_mukhopadhyay@abernathy-little.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3582364,&quot;name&quot;:&quot;Shrishti Sharma II&quot;,&quot;email&quot;:&quot;sharma_ii_shrishti@raynor.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3582363,&quot;name&quot;:&quot;Deepali Patil&quot;,&quot;email&quot;:&quot;deepali_patil@white.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3582362,&quot;name&quot;:&quot;Shresthi Khatri&quot;,&quot;email&quot;:&quot;khatri_shresthi@ankunding-yundt.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3582361,&quot;name&quot;:&quot;Vidhur Shah CPA&quot;,&quot;email&quot;:&quot;vidhur_cpa_shah@goodwin.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3582360,&quot;name&quot;:&quot;Prema Embranthiri&quot;,&quot;email&quot;:&quot;prema_embranthiri@kuvalis.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3582359,&quot;name&quot;:&quot;Shantanu Sethi&quot;,&quot;email&quot;:&quot;shantanu_sethi@zieme-schumm.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3582358,&quot;name&quot;:&quot;Msgr. Dhanpati Menon&quot;,&quot;email&quot;:&quot;menon_dhanpati_msgr@leffler.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3582357,&quot;name&quot;:&quot;Mina Tandon&quot;,&quot;email&quot;:&quot;tandon_mina@beer.example&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3582356,&quot;name&quot;:&quot;Opalina Gill&quot;,&quot;email&quot;:&quot;opalina_gill@torp.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer&#39; + TokenId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">35</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def iduser = response[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print iduser</span>
+      </div>
+    </div>
+    <div class="time-cell passed">78</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">12:13:20.172 [print] 3582365 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
