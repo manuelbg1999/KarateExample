@@ -1,6 +1,6 @@
  #language en
 
-   Scenario: Delete user
+   Feature:  delete user
 
    Background:
 
