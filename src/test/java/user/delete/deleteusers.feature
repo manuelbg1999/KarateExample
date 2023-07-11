@@ -1,9 +1,6 @@
- #language en
-
-   Feature:  delete user
+Feature: delete user
 
    Background:
-
  * def TokenId = '7d15030cb55b5df9de9e9bbdcde859c8ffb951f4927d766303d98021d5d2427b'
 
 
