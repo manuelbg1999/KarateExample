@@ -1,5 +1,5 @@
 #Language En
-
+#Easy
 
   Feature: get users using the method get method
 
@@ -33,6 +33,7 @@
       When method get
       Then status 200
       And print response
+
 
 
 
