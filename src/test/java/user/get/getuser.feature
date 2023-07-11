@@ -1,5 +1,5 @@
 #Language En
-#Easy fffsd
+#Easy ejemplo
 
   Feature: get users using the method get method
 
