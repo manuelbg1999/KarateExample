@@ -27,6 +27,7 @@
       And header Authorization = 'Bearer' + TokenId
       Then status 200
       And print response
+        And def Json = response
 
 
 
