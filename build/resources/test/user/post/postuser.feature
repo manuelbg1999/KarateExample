@@ -14,6 +14,27 @@ Feature: create users
 
     }
     """
+    * def invalidpayload =
+           """
+    {
+    "namee":"manuel32333",
+    "emaile":"manuel45334334654@gmail.com",
+    "gendeer":"male",
+    "statuse":"Active",
+
+    }
+    """
+
+      * def payloaduser =
+            """
+    {
+    "name":"#(name)",
+    "email":"#(email)",
+    "gender":"#(gender)",
+    "status":"#(status)",
+
+    }
+    """
 
       @create
       Scenario: create new user
@@ -34,5 +55,32 @@ Feature: create users
     When method Post
     Then status 422
     And print response
+    And def message = response[0].message
+    And print message
+    #Afirmaciones inteligentes
+    And match message == "hwssas already been taken"
+
+
+    Scenario: create user invalid Json body
+      Given url 'https://gorest.co.in/public/v2/users'
+      And request invalidpayload
+      And header Authorization = 'Bearer ' + TokenId
+      When method Post
+      Then status 400
+      And print response
+
+   #Scenario Outline:
+  Scenario Outline: create multiple user
+    Given url 'https://gorest.co.in/public/v2/users'
+    And request payloaduser
+    And header Authorization = 'Bearer ' + TokenId
+    When method Post
+    Then status 201
+    And print response
     And def id = response.id
     And print id
+
+    Examples:
+      |name|email|gender|status|
+      |manuel|manuel@outline.com|male|Active|
+      |manuel|email@emailde.com|male|Active|
