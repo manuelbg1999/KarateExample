@@ -57,8 +57,8 @@ Feature: create users
     And print response
     And def message = response[0].message
     And print message
-    #Afirmaciones inteligentes
-    And match message == "hwssas already been taken"
+    #Afirmaciones inteligentes validamos el mensaje en el json de response
+    And match message == "has already been taken"
 
 
     Scenario: create user invalid Json body
